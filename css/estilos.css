@@ -1,0 +1,251 @@
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(223deg, #050569 0%, #BDDEBD 100%);
+  }
+
+  div.encabezado {
+    text-align: center;
+  }
+
+  .encabezado img {
+    width:200px;
+    height:200px;
+    border-radius:160px;
+    border:10px solid rgb(174, 252, 252);
+  }
+
+.encabezado h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+.encabezado h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1,5rem;
+    font-style: italic;
+    color: rgb(230, 226, 237);
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    border-radius: 10px 10px 10px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .card {
+    display: flex;
+    flex: 0 0 25%;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.5);
+    }
+
+  .card img {
+    max-width: 100%;
+  }
+  .card .text {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px 20px 20px;
+    }
+
+  .card .text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    bottom: 0px;
+    margin-top: 15px;
+    }
+
+    .card .text p {
+      padding: 10px;
+    }
+
+    .card .text p span{
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+
+    .card .subtituloCard {
+      /*font-size: 0.9rem;*/
+      font-weight: bold;
+      padding: .3em;
+    }
+
+    .card .listaCard {
+      padding: 0 1.5em 0 1.5em;
+      font-size: 0.8em;
+    }
+
+    .card .listaCompetencias {
+      margin: 0 25px 0 25px;
+      font-size: 1rem;
+      padding: 1rem;
+      line-height: 1.5rem;
+    }
+
+    button {
+      position: relative;
+      margin-bottom: 20px;
+      width: 90%;
+      height: 30px;
+      color: white;
+      background-color: gray;
+      border: none;
+      transition-duration: 0.4s;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    button:after {
+      content:"";
+      background: #f1f1f1;
+      display: block;
+      position: absolute;
+      padding-top: 300%;
+      padding-left: 350%;
+      margin-left: -20px;
+      margin-top: -120px;
+      opacity: 0;
+      transition: all 0.8s;
+    }
+
+    button:active:after {
+      padding: 0;
+      margin: 0;
+      opacity: 1;
+      transition: 0s;
+    }
+
+    .card .CV {
+      margin-bottom: 20px;
+      width: 80%;
+      height: 30px;
+      color: gray;
+      background-color: rgb(236, 236, 236);
+      border: 0px;
+    }
+
+    .cardsVerMas {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      justify-content: center;
+      border-radius: 10px 10px 10px 10px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .cardVerMas {
+      display: flex;
+      flex: 0 0 50%;
+      flex-direction: column;
+      align-items: center;
+      /*height: 400px;*/
+      margin: 10px;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px 10px 10px 10px;
+      -webkit-border-radius: 10px 10px 10px 10px;
+      -moz-border-radius: 10px 10px 10px 10px;
+      box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.5);
+      -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.5);
+      -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.5);
+      }
+
+      .cardContacto {
+        display: flex;
+        flex: 0 0 25%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /*height: 400px;*/
+        margin: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.5);
+        }
+
+        .cardVerMas .text {
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+          padding: 20px 20px 20px 20px;
+          }
+      
+          .cardVerMas .text p {
+            padding: 10px;
+          }
+      
+          .cardVerMas .text p span{
+            font-size: 0.8rem;
+            font-weight: bold;
+          }
+          
+          .cardContacto .CV {
+          margin-bottom: 20px;
+          width: 90%;
+          height: 30px;
+          color: gray;
+          background-color: rgb(236, 236, 236);
+          border: 0px;
+        }
+
+        .cardContacto .text {
+          padding: 20px;
+        }
+        .cardContacto .text p {
+          padding: 10px;
+        }
+
+        .cardVerMas .subtituloCardVerMas {
+            color: rgb(83, 83, 83);
+            font-weight: bold;
+            padding: .7em 0 0 0;
+        }
+
+        .cardVerMas .listaCardVerMas {
+          padding: .5em 1.5em 1.5em 1.5em;
+          font-size: 0.85em;
+        }
+
+        .cardVerMas .listaCardVerMas .CAC {
+          font-size: 1em;
+          color: green;
+          font-weight: bold;
+        }
